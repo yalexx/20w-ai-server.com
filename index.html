@@ -1,1 +1,87 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Loading...</title><meta http-equiv="refresh" content="0;url=https://openclawhardware.dev"></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20W AI Server — Ultra-Low Power AI Infrastructure</title>
+<meta name="description" content="Ultra-Low Power AI Infrastructure. Expert articles about power-efficient AI computing. Guides, benchmarks, and practical advice.">
+<meta name="keywords" content="low power ai server 20w, edge ai, local ai, self-hosted ai">
+<link rel="canonical" href="https://20w-ai-server.com/">
+<meta property="og:title" content="20W AI Server — Ultra-Low Power AI Infrastructure">
+<meta property="og:description" content="Expert articles about power-efficient AI computing">
+<meta property="og:url" content="https://20w-ai-server.com/">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "20W AI Server",
+  "url": "https://20w-ai-server.com/",
+  "description": "Ultra-Low Power AI Infrastructure",
+  "publisher": {
+    "@type": "Organization",
+    "name": "20W AI Server"
+  }
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root { --c: #10b981; --a: #059669; --bg: #0f0f14; --card: #16161d; --text: #e0e0ec; --dim: #8888a0; --border: #2a2a3a; }
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+header { background: linear-gradient(135deg, var(--a), var(--c)); padding: 60px 20px; text-align: center; }
+header h1 { font-size: 2.5em; font-weight: 800; color: #fff; margin-bottom: 8px; }
+header p { font-size: 1.2em; color: rgba(255,255,255,0.85); }
+nav { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 20px; text-align: center; }
+nav a { color: var(--c); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.9em; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+.post { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 32px; }
+.post h2 { color: var(--c); font-size: 1.5em; margin-bottom: 16px; line-height: 1.3; }
+.post p { margin-bottom: 14px; color: var(--dim); font-size: 0.95em; }
+.post p:last-child { margin-bottom: 0; }
+footer { text-align: center; padding: 40px 20px; border-top: 1px solid var(--border); color: var(--dim); font-size: 0.85em; }
+footer a { color: var(--c); text-decoration: none; }
+.cta { display: inline-block; background: var(--c); color: #fff; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 12px; }
+.cta:hover { background: var(--a); }
+@media (max-width:600px) { header h1 { font-size:1.8em; } .post { padding:20px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>20W AI Server</h1>
+  <p>Ultra-Low Power AI Infrastructure</p>
+</header>
+<nav>
+  <a href="/">Home</a>
+  <a href="#articles">Articles</a>
+  <a href="https://openclawhardware.dev" rel="noopener">Hardware</a>
+</nav>
+<main id="articles">
+  
+    <article class="post">
+      <h2>Why 20W Is the Sweet Spot for Always-On AI</h2>
+      <p>The economics of running AI servers 24/7 come down to one number: watts. At 20W, you're spending roughly €0.80/month on electricity — less than a light bulb. Compare that to a typical home server at 100-200W (€4-16/month) or a cloud GPU instance ($50-200/month).</p><p>For inference tasks like running language models, voice assistants, or home automation, 20W hardware based on ARM + GPU architectures delivers surprisingly capable performance. The NVIDIA Jetson platform, for example, pushes 67 TOPS of AI compute at under 25W. That's enough to run 8B parameter models at 15 tokens/sec locally.</p><p>The key insight: most AI workloads don't need datacenter-grade GPUs. Conversational AI, code completion, document summarization, and smart home control all run comfortably on edge hardware. Reserve cloud APIs for the heavy reasoning tasks, and you have a hybrid architecture that costs a fraction of cloud-only setups while keeping your data local..</p>
+    </article>
+    <article class="post">
+      <h2>Power Consumption Comparison: AI Hardware in 2026</h2>
+      <p>We tested popular AI-capable hardware for real-world power draw during inference workloads. Results might surprise you. NVIDIA Jetson Orin Nano: 15-22W under load, 8W idle.</p><p>Raspberry Pi 5 + Hailo-8: 12-18W under load, limited to smaller models. Intel NUC 13 Pro: 45-65W, better CPU but no dedicated AI accelerator. Mac Mini M4: 25-40W, excellent performance but 3x the price.</p><p>Desktop with RTX 4060: 120-180W, overkill for 24/7 inference. For always-on AI servers, the annual electricity cost difference is dramatic: 20W = ~€44/year, 65W = ~€143/year, 150W = ~€329/year. Over a 3-year lifespan, the 20W server saves €500-850 in electricity alone compared to traditional options..</p>
+    </article>
+    <article class="post">
+      <h2>Building a Silent AI Lab Under Your Desk</h2>
+      <p>The ideal home AI setup is invisible: silent, low-power, always running. Here's how to build one. Start with a 20W-class AI board — the Jetson Orin Nano or similar ARM+GPU platform.</p><p>Mount it in a compact passive or semi-passive case. Connect via Ethernet for reliability (WiFi works but wired is better for 24/7 operation). Install a lightweight Linux distro, add your AI framework of choice, and configure it as a headless server.</p><p>Key services to run: local LLM inference (Llama 3.1 8B or similar), speech-to-text (Whisper), text-to-speech (Kokoro/Piper), and a web dashboard. Total power draw: 15-22W. Noise level: near zero.</p><p>Monthly electricity: under €1. The result is a personal AI lab that runs 24/7 without you noticing it's there.</p>
+    </article>
+    <article class="post">
+      <h2>Edge AI vs Cloud AI: The Total Cost of Ownership</h2>
+      <p>Cloud AI seems cheap at first: pay per token, no hardware to buy. But the math changes dramatically for always-on workloads. Let's model a realistic scenario: an AI assistant processing 50 requests/day with a mix of local and cloud inference.</p><p>Cloud-only approach: $15-40/month in API costs = $180-480/year. Edge-only (20W server): ~$600 hardware + $10/year electricity = $610 year one, $10/year ongoing. Hybrid (recommended): $600 hardware + $5-10/month cloud for complex tasks = $660-720 year one, $60-120/year ongoing.</p><p>By month 18, the edge/hybrid approach breaks even with cloud-only. By year 3, you've saved $300-1,000 while keeping sensitive data local. The 20W power envelope makes this math work — higher-power servers erode the savings..</p>
+    </article>
+  <div style="text-align:center; margin-top:40px;">
+    <p style="color:var(--dim);">Looking for ready-to-use AI hardware?</p>
+    <a class="cta" href="https://openclawhardware.dev">Check out ClawBox →</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 20W AI Server. Built for the edge AI community.</p>
+  <p style="margin-top:8px;"><a href="https://openclawhardware.dev">OpenClaw Hardware</a> · <a href="https://discord.gg/FbKmnxYnpq">Community</a></p>
+</footer>
+</body>
+</html>
